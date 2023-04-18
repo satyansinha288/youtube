@@ -35,7 +35,7 @@ const Navbar = () => {
             <img
               src="https://p.kindpng.com/picc/s/78-786085_robot-01-icon-robot-free-icon-hd-png.png"
               alt=""
-            />
+            /> 
             <div className="profile">
               <ArrowDropDown className="icon" />
               <div className="options">
