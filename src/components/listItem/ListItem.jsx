@@ -6,10 +6,13 @@ import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai"
 
 export default function ListItem(index) {
   const [isHovered, setIsHovered] = useState(false)
-  const trailer = "https://www.youtube.com/watch?v=Ruyl8_PT_y8"
+  const trailer =
+    "https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761"
+
   return (
     <div
       className="listItem"
+      // @ts-ignore
       style={{ left: isHovered && index * 225 - 50 + index * 2.5 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -23,10 +26,10 @@ export default function ListItem(index) {
           <video src={trailer} autoPlay={true} loop />
           <div className="itemInfo">
             <div className="icons">
-              <BsFillPlayFill />
-              <MdAdd />
-              <AiOutlineLike />
-              <AiOutlineDislike />
+              <BsFillPlayFill className="icon" />
+              <MdAdd className="icon" />
+              <AiOutlineLike className="icon" />
+              <AiOutlineDislike className="icon" />
             </div>
             <div className="itemTopInfo">
               <span>1hrs 34mins</span>
